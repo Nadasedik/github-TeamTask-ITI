@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import { Link } from "react-router-dom"
 import { CardGroup,Card,Button, Container ,Form, FormControl} from "react-bootstrap";
 import { useState,useEffect } from "react";
 
@@ -57,7 +57,9 @@ const ListingMovies =()=>{
           return(
             
             <Card key={card.id} style={{ width: '18rem' }}>
+            <Link to={`/movie-details/${card.id}`}>
             <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w500${card.backdrop_path}`} />
+            </Link>
             <Card.Body>
               <Card.Title>{card.original_title}</Card.Title>
               <Card.Text>
