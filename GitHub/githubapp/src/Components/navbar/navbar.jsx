@@ -12,10 +12,7 @@ const Naavbar =()=>{
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link href="/Movies">Movies</Nav.Link>
-        {/* <Nav.Link to="/Form">Register</Nav.Link> */}
-        <li className="nav-item">
-                <Link className="nav-link" to="/Form">Register</Link>
-              </li>
+        <Nav.Link href="#link">Favourites</Nav.Link>
         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
