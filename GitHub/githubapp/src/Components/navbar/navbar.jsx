@@ -1,9 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, NavDropdown,Nav,Container } from 'react-bootstrap';
 
 import { Link } from 'react-router-dom';
 
-const NavBar =()=>{
+const Naavbar =()=>{
     return(
 <Navbar bg="light" expand="lg">
   <Container>
@@ -11,7 +11,7 @@ const NavBar =()=>{
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Link to="/Movies">Movies</Link>
+        <Nav.Link href="/Movies">Movies</Nav.Link>
         <Nav.Link href="#link">Favourites</Nav.Link>
         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -27,4 +27,4 @@ const NavBar =()=>{
     )
 }
 
-export default NavBar;
+export default Naavbar;
