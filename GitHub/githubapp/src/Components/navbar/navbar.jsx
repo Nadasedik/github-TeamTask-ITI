@@ -17,7 +17,6 @@ const Naavbar =()=>{
         <li className="nav-item">
                 <Link className="nav-link text-primary" to="/Form">Register</Link>
               </li>
-
         <Nav.Link href="#link">Favourites</Nav.Link>
 
         <NavDropdown title="Dropdown" id="basic-nav-dropdown">

@@ -1,8 +1,8 @@
 import axios from "axios";
 import { Link } from "react-router-dom"
 import { CardGroup,Card,Button, Container ,Form, FormControl} from "react-bootstrap";
-import { useState,useEffect } from "react";
-
+import { useState,useEffect ,useContext} from "react";
+import {LanguageContext } from './../../Context/Context'
 
 
 const ListingMovies =()=>{
@@ -12,7 +12,10 @@ const ListingMovies =()=>{
     const changeHandler=(e)=>{
       setSearchText(e.target.value);
     }
-
+    const{lang,setLang}=useContext(LanguageContext);
+    const toggleLang=()=>{
+        setLang(lang=== "en" ? "ar" : "en")
+    }
     const gettingData = () => {
       axios
         .get(
@@ -45,7 +48,9 @@ const ListingMovies =()=>{
         //   <h2 className="text-center">{lang}</h2>
        
        <>
-      <div className="row my-5 mx-5">
+      <div className="row my-5 mx-5"  dir={lang=="en"?"ltr":"rtl"}>
+      <h2 className="text-center">{lang}</h2>
+      <span> <button className="btn btn-primary float-end mb-5" onClick={()=>{toggleLang();}}>Toggle</button></span>
       <Form className="d-flex">
         <FormControl
             type="search"
