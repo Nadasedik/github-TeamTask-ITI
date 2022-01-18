@@ -14,7 +14,7 @@ const Naavbar =()=>{
         <Nav.Link href="/Movies">Movies</Nav.Link>
         {/* <Nav.Link to="/Form">Register</Nav.Link> */}
         <li className="nav-item">
-                <Link className="nav-link" to="/Form">Register</Link>
+                <Link className="nav-link text-primary" to="/Form">Register</Link>
               </li>
         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

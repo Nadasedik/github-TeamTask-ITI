@@ -6,7 +6,7 @@ import './App.css';
 import Naavbar from './Components/navbar/navbar.jsx';
 import listOfMovies from './Components/PresentFilms/listOfMovies'
 import Form from './Components/Form/Form'
-import {LanguageContext ,LanguageProvider}from './Context/Context'
+import {LanguageProvider}from './Context/Context'
 import {useState} from 'react'
 
 

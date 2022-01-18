@@ -45,7 +45,7 @@ const ListingMovies =()=>{
         <div className="row" dir={lang=="en"?"ltr":"rtl"}>
           <h1 className="mt-3 mb-4">Movies</h1>
           <h2 className="text-center">{lang}</h2>
-       <span> <button className="btn btn-danger float-end" onClick={()=>{toggleLang();}}>Toggle</button></span>
+       <span> <button className="btn btn-brimary float-end" onClick={()=>{toggleLang();}}>Toggle</button></span>
 
         {films.map((card) => {
           return(
